@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Master - PDF Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📄 Document Master</h1>
+    <p>Select a PDF tool below:</p>
+
+    <!-- Tool Options as Boxes -->
+    <div class="tool-boxes">
+      <div class="tool-box active" data-tool="merge" onclick="selectTool(this)">✅ Merge PDF</div>
+      <div class="tool-box" data-tool="compress" onclick="selectTool(this)">🗜️ Compress PDF</div>
+      <div class="tool-box" data-tool="base64" onclick="selectTool(this)">🔤 PDF to Base64</div>
+    </div>
+
+    <!-- File input -->
+    <input type="file" id="pdfFiles" accept=".pdf" multiple>
+    <br><br>
+
+    <!-- Action Button -->
+    <button onclick="processTool()">Process</button>
+    <p id="statusMsg"></p>
+  </div>
+
+  <!-- Include pdf-lib from CDN -->
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

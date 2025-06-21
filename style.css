@@ -1,0 +1,71 @@
+/* style.css */
+/* UI styling for Document Master with box-based tool selection */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f8b500, #fceabb);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tool-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.tool-box {
+  background: #f1f1f1;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.tool-box:hover {
+  background: #ffe0b2;
+}
+
+.tool-box.active {
+  border-color: #e67e22;
+  background-color: #ffcc80;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d35400;
+}
+
+#statusMsg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
